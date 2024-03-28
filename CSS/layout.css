@@ -1,0 +1,123 @@
+*{
+   box-sizing: border-box; 
+}
+
+body{
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    
+
+}
+.topo{
+    background-color: rgb(214, 53, 4);
+    padding: 50px;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+}
+.topo h1{
+    font-size: 50px;
+}
+
+.menuTopo{
+    overflow: hidden;
+    background-color: rgb(255, 120, 10);
+    text-align: center;
+    position: sticky;
+    top: 10px;
+    }
+
+ .menuTopo ul{
+    display: inline-block;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+ }  
+ 
+ .menuTopo ul li{
+    float: left;
+       
+ }
+
+ .menuTopo a{
+    display: block;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 14px 16px;
+    float: right;
+    text-decoration: none;
+    float: right;
+    background-color: rgb(250, 167, 42);
+    margin 0 2px;
+    border-radius: 3px;
+ }
+
+ .menuTopo a:hover{
+    background-color: rgb(26, 153, 1);
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+
+ }
+.corpo{
+    width: 1024px;
+    margin: 10px auto;
+}
+
+.corpo:after{
+    clear: both;
+    content: "";
+    display: table;
+}
+
+.esquerda{
+    width: 75%;
+    float: left;
+}
+
+.direita{
+    width: 25%;
+    float: right;
+}
+
+.destaque{
+    background-color: rgb(255, 102, 0);
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.imagens{
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+}
+
+footer{
+    background-color: rgb(34, 160, 2);
+    padding: 20px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+@media screen and (max-width: 1028px) {
+    .esquerda, .direita{
+        width: 100%;
+        padding: 10px;
+    }
+    .corpo{
+        width: 100%;
+        padding: 5px;
+        margin: 0;  
+    }
+  }
+
+  @media  and (max-width: 400px) {
+    .menuTopo ul li, .menuTopo a;{
+    float: none;
+    width: 100%;
+    }
+   
+    
+  }
