@@ -88,10 +88,14 @@ body{
     margin-top: 20px;
 }
 
-.imagens{
+.imagem{
     width: 100%;
     text-align: center;
     padding: 20px;
+}
+
+.imagem img{
+    width: 500px;
 }
 
 footer{
@@ -99,6 +103,18 @@ footer{
     padding: 20px;
     text-align: center;
     margin-top: 10px;
+}
+
+.coutainer{
+    background-image: url('IMAGENS/Hinata.jpg');
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+}
+.container p{
+    position: fixed;
+    bottom: 5%;
+    right: 10%;
 }
 
 @media screen and (max-width: 1028px) {
